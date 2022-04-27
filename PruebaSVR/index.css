@@ -1,0 +1,157 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background: rebeccapurple;
+    width: 100%;
+    height: 50px;
+    box-shadow: 5px 20px 30px rebeccapurple;
+    opacity: 0.8;
+}
+
+nav ul {
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: flex;
+    display: inline-flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 9px 4px;
+    margin: -10px 0px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: rebeccapurple;
+}
+
+nav ul li a:active {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+
+.cuerpo {
+    text-align: center;
+    background-color: rgba(114, 89, 255, 0.2);
+}
+
+.h1n {
+    padding-top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.h1n:hover {
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+.h2n {
+    color: rgb(161, 161, 20);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h2n:hover {
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+.boton {
+    color: white;
+    background-color: rebeccapurple;
+    border-radius: 25px;
+    border: 0px;
+    padding: 10px;
+    box-shadow: 8px 8px 10px rgb(157, 95, 219);
+}
+
+.lorem {
+    text-align: center;
+}
+
+.boton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.boton:active {
+    background-color: white;
+    color: rebeccapurple;
+}
+
+.menuButton {
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+    display: none;
+    padding-left: 10px;
+}
+
+#check {
+    display: none;
+}
+
+.logo {
+    display: flexbox;
+    height: 45px;
+    background-color: white;
+    margin-top: 3px;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 550px) {
+    ul {
+        background: rebeccapurple;
+        position: fixed;
+        top: 42px;
+        width: 70%;
+        height: 100%;
+        text-align: left;
+        opacity: 0.8;
+        box-shadow: 40px 0px 10px rgb(132, 77, 187); 
+    }
+
+    nav ul li {
+        display: block;
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;        
+    }
+
+    nav ul li:hover {
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    nav ul li a:hover {
+        color: rebeccapurple
+    }
+
+    nav ul li a:active{
+        color: white;
+    }
+
+    .menuButton {
+        display: inline;
+    }
+
+    #check:checked ~ ul {
+        transition: 1.5s;
+    }
+
+    .logo {
+        display: none;
+    }
+}
